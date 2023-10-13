@@ -42,27 +42,30 @@ console.log(me.age);
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */ let skills = ["Html", "Javascript", "Css"];
-me.skills;
+me.push(skills);
+console.log(me);
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
-*/
+*/ me.skills.push("Excel");
+console.log(me);
 
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
-*/
+*/ me.skills.pop();
+console.log(me);
 
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-function dice(a) {
-  let random = Math.floor(Math.random(a) * 6);
+function dice() {
+  let random = Math.ceil(Math.random() * 6);
   return random;
 }
 
-console.log(dice(1, 2, 3, 4, 5, 6));
+console.log(dice());
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
@@ -92,24 +95,11 @@ console.log(whoIsBigger(3, 7));
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-function isThisAnEmail("stringa") {
-  const string=email
-  if (string) {
-    
-  } else {
-    
-  }
-  
-}
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 
-*/function whatDayIsIt() {
-  const day= new Date()
-  const weekday=data.day
-  
-}
+*/
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
